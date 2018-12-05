@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  deploytest:
+    image: ${DOCKER_REGISTRY-}deploytest
+    build:
+      context: .\DeployTest
+      dockerfile: Dockerfile
